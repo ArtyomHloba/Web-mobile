@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: rgba(78, 90, 101, 1);
+    padding-top: 2em;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .header-nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+  }
+
+  .site-name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+  }
+
+  .nav-titles{
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .registration{
+    display: flex;
+    gap: 5px;
+  }
+
+  .purple-btn{
+    color: rgba(121, 76, 255, 1);
+    background-color: rgba(236, 229, 255, 1);
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+
+  .burger{
+    display: none;
+    color: rgba(53, 65, 75, 1);
+  }
+
+  @media screen and (max-width:800px) {
+    .burger{
+        display: block;
+        position: absolute;
+        right: 0;
+        font-size: 2em;
+        padding-right: 15px;
+    }
+
+    .site-name{
+        padding-left: 15px;
+        position: absolute;
+        left: 0;
+    }
+
+    .registration,
+    .nav-links{
+        display: none;
+    }
+
+    .green-sale{
+        display: none;
+    }
+  }
+
+  .header{
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    gap: 1.5em;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .sale{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .green-sale{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    background-color: rgba(129, 196, 59, 1);
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .salat-sale{
+    color: rgba(53, 65, 75, 1);
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: rgba(242, 249, 235, 1);
+  }
+
+  .main-title{
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .deskrb-p{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  
+
+  .input-mail{
+    border: 1px solid rgba(225, 229, 234, 1);
+    border-radius: 5px;
+    padding: 13px 20px;
+  }
+
+  .try-it-btn{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    background-color: rgba(121, 76, 255, 1);
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
