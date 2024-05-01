@@ -55,31 +55,6 @@
     color: rgba(53, 65, 75, 1);
   }
 
-  @media screen and (max-width:800px) {
-    .burger{
-        display: block;
-        position: absolute;
-        right: 0;
-        font-size: 2em;
-        padding-right: 15px;
-    }
-
-    .site-name{
-        padding-left: 15px;
-        position: absolute;
-        left: 0;
-    }
-
-    .registration,
-    .nav-links{
-        display: none;
-    }
-
-    .green-sale{
-        display: none;
-    }
-  }
-
   .header{
     padding-top: 4em;
     display: flex;
@@ -105,13 +80,16 @@
     background-color: rgba(129, 196, 59, 1);
     border-radius: 10px;
     padding: 10px 10px;
+    margin-right: -20px;
+    z-index: 1; 
   }
 
   .salat-sale{
     color: rgba(53, 65, 75, 1);
     font-weight: 400;
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 10px 10px 10px 30px;
+    
     background-color: rgba(242, 249, 235, 1);
   }
 
@@ -125,11 +103,14 @@
     font-size: 1rem;
   }
 
-  
+  .input-cont{
+    display: flex;
+  }
 
   .input-mail{
     border: 1px solid rgba(225, 229, 234, 1);
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding: 13px 20px;
   }
 
@@ -137,6 +118,171 @@
     color: rgba(255, 255, 255, 1);
     font-weight: 500;
     background-color: rgba(121, 76, 255, 1);
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 10px 15px;
+  }
+
+  .graph-main-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .bold-population{
+    font-weight: 800;
+  }
+
+  .graph-cont{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .make-work-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 4em;
+  }
+
+  .title-make-work{
+    font-weight: 600;
+    font-size: 18px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .child-title{
+    text-align: center;
+    padding-top: 10%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .work-how-you-cont{
+    background-color: rgba(240, 235, 250, 1) ;
+  }
+
+  .center-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .work-how-cont{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+    gap: 1.5em;
+  }
+
+  .how-work-title{
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  .how-work-btn{
+    background-color: rgba(121, 110, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+  }
+
+  @media screen and (max-width:800px) {
+    .burger{
+        display: block;
+        position: absolute;
+        right: 0;
+        font-size: 2em;
+        padding-right: 15px;
+    }
+
+    .site-name{
+        padding-left: 15px;
+        position: absolute;
+        left: 0;
+    }
+
+    .registration,
+    .nav-links{
+        display: none;
+    }
+
+    .green-sale{
+        display: none;
+    }
+
+    .main-title{
+      font-size: 3em;
+    }
+
+    .deskrb-p{
+      max-width: 350px;
+    }
+
+    .input-cont{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .input-mail{
+      width: 400px;
+    }
+
+    .graph-adapt{
+      width: 500px;
+    }
+
+    .logo-for-work{
+      width: 48px;
+      height: 48px;
+    }
+
+    .child-title{
+      font-size: 18px;
+    }
+
+    .make-work-cont{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 400px;
+      min-width: 200px;
+      margin: 0 auto;
+    }
+
+    .work-how-cont{
+      text-align: center;
+      align-items: center;
+      width: 450px;
+    }
+
+    .center-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .statisticks-adapt{
+      width: 450px;
+    }
   }
