@@ -144,12 +144,14 @@
 
   .make-work-cont{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, minmax(150px, 300px));
     grid-template-rows: repeat(3, 150px);
     justify-content: center;
     align-items: center;
     gap: 2em;
     padding-bottom: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 
   .title-make-work{
