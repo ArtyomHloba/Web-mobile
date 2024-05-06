@@ -128,6 +128,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    max-width: 1110px;
+    margin: 0 auto;
   }
 
   .bold-population{
@@ -142,12 +144,15 @@
     margin: 0 auto;
   }
 
+  .graph-adapt{
+    width: 100%;
+  }
+
   .make-work-cont{
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 300px));
-    grid-template-rows: repeat(3, 150px);
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 2em;
     padding-bottom: 4em;
     padding-right: 1em;
@@ -220,8 +225,7 @@
 
     .site-name{
         padding-left: 15px;
-        position: absolute;
-        left: 0;
+        margin-right: auto;
     }
 
     .registration,
@@ -252,7 +256,7 @@
     }
 
     .graph-adapt{
-      width: 500px;
+      width: 100%;
     }
 
     .logo-for-work{
